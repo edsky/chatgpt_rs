@@ -13,7 +13,7 @@ pub mod prelude;
 pub mod types;
 
 /// Result that is returned from most ChatGPT functions
-pub type Result<T> = std::result::Result<T, err::Error>;
+pub type Result<T> = anyhow::Result<T>;
 
 #[cfg(test)]
 pub mod test {
